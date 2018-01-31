@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_browse_fragment"
+    android:name="co.triadicsoftware.bluetoothcontrollertesting.MainFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    tools:deviceIds="tv"
+    tools:ignore="MergeRootFrame">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button Pressed: "
+            android:textSize="33sp"/>
+        <TextView
+            android:id="@+id/button_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World"
+            android:textSize="33sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Direction Pressed: "
+            android:textSize="33sp"/>
+        <TextView
+            android:id="@+id/direction_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World"
+            android:textSize="33sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Joystick Directions: "
+            android:textSize="33sp"/>
+        <TextView
+            android:id="@+id/joystick_x_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World"
+            android:textSize="33sp" />
+        <TextView
+            android:id="@+id/joystick_y_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World"
+            android:textSize="33sp" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/web1_btn"
+        android:nextFocusDown="@+id/web2_btn"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Web1 Webview"
+        android:onClick="startWeb1Activity"/>
+
+    <Button
+        android:id="@+id/web2_btn"
+        android:nextFocusDown="@+id/web1_btn"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Web2 Webview"
+        android:onClick="startWeb2Activity"/>
+
+</LinearLayout>
